@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    <div class="lm">
+        <div class="x"></div>
+        <div class="sidebar">
+            <img src="./assets/images/xceltech-high-resolution-logo-transparent 1.png" class="logo" alt="">
+            <div class="sidebarcontent">
+                <div class="adminprofile">
+                    <img src="./assets/images/dp 1.png" class="userlogo">
+                    <div class="namesurname">
+                        <h4>Aman Admin</h4>
+                        <p>admin</p>
+                    </div>
+                </div>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa-brands fa-microsoft"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i> Payroll Management</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file-lines"></i>   Contracts</a></li>
+                        <li><a href="#"><i class="fa-solid fa-users"></i> Employees</a></li>
+                        <li><i class="fa-solid fa-clipboard-user"></i> Attendence</a></li>
+                        <li><a href="#"><i class="fa-solid fa-plane-departure"></i> Vacation Requests</a></li>
+                    </ul>
+                <button class="btn logout"><i class="fa-solid fa-power-off"></i> Log out</button>
+
+            </div>
+            <img src="./assets/images/image 1 (1).png" class="image" alt="">
+        </div>  
+        <div class="content">
+            <div class="mainnav">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn">All candidates &nbsp<i class="fa-solid fa-sort"></i></button>
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-wrench"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h4>Dashboard</h4>
+                <div class="cards">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slider1">
+                            <a href="#">
+                                <i class="fa-solid fa-money-bill-wave fa-rotate-by" style="--fa-rotate-angle: -15deg;"></i>
+                                <h3><p>4</p><br>payroll</h3>
+                            </a>
+                        </div>
+                          <div class="swiper-slide slider2">
+                            <a href="#">
+                                <i class="fa-solid fa-file-lines fa-rotate-by" style="--fa-rotate-angle: -15deg;"></i>
+                                <h3><p>4</p><br>contracts</h3>
+                            </a>
+                          </div>
+                          <div class="swiper-slide slider3">
+                            <a href="#">
+                                <i class="fa-solid fa-users"></i>
+                                <h3><p>4</p><br>employees</h3>
+                            </a>
+                          </div>
+                          <div class="swiper-slide slider4">
+                            <a href="#">
+                                <i class="fa-solid fa-clipboard-user"></i>
+                                <h3><p>2</p><br>attendencies</h3>
+                            </a>
+                          </div>
+                          <div class="swiper-slide slider5">
+                            <a href="#">
+                                <i class="fa-solid fa-plane-departure"></i>
+                                <h3><p>6</p><br>vacations</h3>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                      </div>
+
+                </div>
+
+                <div class="dashboardtableemployees">
+                    <h1>Employees</h1>
+                    <div class="dte">
+                        <img src="./assets/images/Ellipse 9.png" alt="">
+                        <div class="nameandsalary">
+                            <h4>Aman</h4>
+                            <p>Salary: 10 000$</p>
+                        </div>
+                        <div class="paidorno">
+
+                        </div>
+                    </div>
+                    <div class="dte">
+                        <img src="./assets/images/Ellipse 11.png" alt="">
+                        <div class="nameandsalary">
+                            <h4>Aman</h4>
+                            <p>Salary: 10 000$</p>
+                        </div>
+                        <div class="paidorno">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3.5,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script> 
+</body>
+</html>

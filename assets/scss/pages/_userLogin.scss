@@ -1,0 +1,71 @@
+.login {
+  display: flex;
+  gap: 40px;
+
+  .leftForm {
+    padding-top: 140px;
+    flex: 1 1 50%;
+    .leftForm_Heading {
+      font-size: 16px;
+      color: #192f78;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    .leftForm_Subtext {
+      margin-left: 40px;
+      margin-top: 10px;
+      color: #868e96;
+    }
+    form {
+      margin-left: 40px;
+      margin-top: 40px;
+      .formBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        label {
+          margin-bottom: 10px;
+          color: #192f78;
+          font-weight: 600;
+        }
+        input {
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          outline: none;
+          font-size: 16px;
+          width: 100%;
+        }
+      }
+      .checkBox {
+        margin-block: 20px 10px;
+        a {
+          font-size: 16px;
+        }
+      }
+      .button {
+        margin-bottom: 20px;
+        button {
+          width: 100%;
+          height: 40px;
+          border-radius: 10px;
+          background-color: #192f78;
+
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .rightImage {
+    height: 100vh;
+    flex: 1 1 50%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(120, 111, 111, 0.8240546218487395) 0%,
+        rgba(0, 65, 255, 0.3) 100%
+      ),
+      url(/assets/image/african-american-employer-holding-employment-agreement-handshaking-candidate-close-up-view\ 1.png);
+  }
+}

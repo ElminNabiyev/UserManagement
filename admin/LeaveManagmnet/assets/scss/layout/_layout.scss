@@ -1,0 +1,168 @@
+.lm {
+    // .x{
+    //   width: 20%;
+    //   min-width: 280px; 
+    // }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    .adminprofile{
+      margin: 20px 0;
+      gap: 20px;
+      align-self: left;
+      justify-content: center;
+      align-items: center;
+      .namesurname{
+        max-width: 150px;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .logo{
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .sidebarcontent{
+      padding: 10px;
+    }
+    @include flex($dir: column,$align:left, $justify:space-between);
+    background-color: #121C3E;
+
+   width: 20%;
+     min-width: 280px;
+    height: 100vh;
+    color: #fff;
+    .logout{
+      margin-top: 3px;
+      background-color: #FF0000;
+      color: white;
+      font-size: 20px;
+    }
+    .image {
+      width: 100%;
+    }
+  }
+  .sidebarcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 85%;
+    .userlogo{
+      background-color: #FFC20E ;
+      border-radius: 50%;
+      border: 3px solid white;
+      width: 75px;
+      height: 75px;
+    }
+    p{
+      font-size: 10px !important;
+      letter-spacing: 1px;
+    }
+    ul{
+      .active{
+        color: black;
+        background-color: #FFC20E;
+      }
+      li{
+          i{
+            font-size: 20px;
+          }
+          a{
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          width: 240px;
+          text-align: left;
+          padding: 15px ;
+          border-radius: 10px;
+          margin: 30px 0 ;
+          font-size: 14px;
+          transition: 0.2s;
+          &:hover{
+            background-color: #FFC20E;
+            color: black;
+          }
+        }
+
+    }
+  }
+
+// CONTENT----------------------------------------------------------
+
+  .content {
+    margin-left: 20%;
+    background-color: red;
+    width: 80%;
+    min-width: 1100px;
+
+    background-color: #E3EDF9;
+    .mainnav{
+      i{
+        font-size: 25px;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      .search{
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        .fa-magnifying-glass{
+          position: absolute ;
+          color: gray;
+          right: 18px;
+          top: 18px;
+          font-size: 15px;
+        }
+        .fa-sort{
+          font-size: 15px;
+        }
+        input{
+          border: 1px solid transparent;
+          padding-left: 10px;
+          padding-right: 40px;
+          &:focus{
+            outline: none;
+          }
+        }
+        button{
+          background-color: #253D90   ;
+          color: white;
+          border-radius: 0px;
+        }
+      }
+      .icons{
+        display: flex;justify-content: center;align-items: center;
+        gap: 30px;
+        a{
+          .fa-solid{
+            width: 30px;
+            height: 30px;
+            color: white;
+            display: flex;justify-content: center;
+            align-items: center;padding: 10px;
+            border-radius: 50%;
+          }
+          .fa-bell{
+            background-color: #253D90;
+          }
+          .fa-wrench{
+            background-color: #FFC20E;
+            color: black;
+          }
+          .fa-envelope{
+            background-color: #3F861E;
+          }
+        }
+      }
+    }
+  }
+}
